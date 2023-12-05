@@ -1,9 +1,59 @@
-<mxfile host="app.diagrams.net" modified="2023-12-05T08:11:08.212Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="22.1.5" etag="Hs3ivGc1hGLMglniNYkA" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-05T08:15:59.906Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="Jkk0rr_pT2o2JiS5LG9d" version="22.1.5" type="github">
   <diagram name="第 1 页" id="-_9LmzGvIEE0TD_TD-Zh">
-    <mxGraphModel>
+    <mxGraphModel dx="989" dy="523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;MySQL数据同步到ES中&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="20" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mmwiT6Lj6d8uiwMZZqUs-2" target="mmwiT6Lj6d8uiwMZZqUs-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="90" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;业务A&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="125" y="95" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-4" value="完成业务修改数据库信息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="290" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-5" value="MySQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="424" y="290" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mmwiT6Lj6d8uiwMZZqUs-2" target="mmwiT6Lj6d8uiwMZZqUs-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-9" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;RocketMQ&lt;/font&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="394" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-11" value="将修改的数据id传入MQ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="80" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mmwiT6Lj6d8uiwMZZqUs-12" target="mmwiT6Lj6d8uiwMZZqUs-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-12" value="ES" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="90" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-14" value="监听修改的数据信息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" edge="1" parent="1" source="mmwiT6Lj6d8uiwMZZqUs-12" target="mmwiT6Lj6d8uiwMZZqUs-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="755" y="343" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mmwiT6Lj6d8uiwMZZqUs-16" value="根据id，查询修改后的具体信息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="310" width="140" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
